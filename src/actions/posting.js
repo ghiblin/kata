@@ -1,9 +1,13 @@
 const chalk = require('chalk');
 
-const posting = (name, msg) => {
+const posting = (state) => (name, msg) => {
+  // Update state
+  state.postMessage(name, msg);
+
+  // feedback
   console.log(
     chalk.green(name),
-    'says',
+    '->',
     chalk.yellow(msg)
   );
 }

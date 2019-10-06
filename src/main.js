@@ -1,9 +1,11 @@
 const chalk = require('chalk');
 const figlet = require('figlet');
 const EventEmitter = require('events');
+console.log([].flatMap, [].map);
+const state = require('./state');
 
 const { POSTING, FOLLOWING, READING, WALL, END } = require('./constants');
-const { posting, following, reading, wall, end } = require('./actions');
+const { posting, following, reading, wall, end } = require('./actions')(state);
 
 const command = require('./command');
 

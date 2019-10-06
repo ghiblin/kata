@@ -1,6 +1,10 @@
 const chalk = require('chalk');
 
-const following = (a, b) => {
+const following = (state) => (a, b) => {
+  // update state
+  state.follows(a, b);
+
+  // print feedback
   console.log(
     chalk.green(a),
     'follows',

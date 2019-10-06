@@ -1,6 +1,6 @@
 const chalk = require('chalk');
 
-const end = () => {
+const end = (state) => () => {
   console.log(
     chalk.green('Bye...')
   );
