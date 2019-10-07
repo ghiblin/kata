@@ -10,10 +10,10 @@ yarn install
 
 ### Commands
 Inside Kata, you can submit commands by command line. Supported commands are:
-* **To post a message**: <username> -> <message>
-* **To read a username timeline**: <username>
-* **To follow a username**: <follower> follows <following>
-* **To read a username's wall**: <username> wall
+* **To post a message**: _username_ -> _message_
+* **To read a username timeline**: _username_
+* **To follow a username**: _follower_ follows _following_
+* **To read a username's wall**: _username_ wall
 * **To quit**: bye
  
 ### Implementation
